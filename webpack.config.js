@@ -14,7 +14,7 @@ module.exports = {
           test: /\.js$/,
           exclude: /node_modules/,
           use: [
-            // babel avec une option de cache
+            // babel with cache option
             {
               loader: 'babel-loader',
               options: {
@@ -27,9 +27,9 @@ module.exports = {
         {
           test: /\.css$/,
           use: [
-            // style-loader ou fichier
+            // style-loader or files
             'style-loader',
-            // Chargement du CSS
+            // uppload CSS
             'css-loader',
           ],
         },
