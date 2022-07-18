@@ -1,22 +1,15 @@
 import { render } from 'react-dom';
-
-const DireBonjour = ({prenom, nom, age}) => {
-  return (
-    <p style={{ color: 'purple', backgroundColor: 'pink' }}>
-      Bonjour {prenom} {nom} !
-      { age < 18 && <span>Va dans ta chambre</span> }
-    </p>
-  )
-};
+import { DireBonjour, DireAuRevoir } from './components/DireBonjour';
 
 const App = () => {
   return (
     <div>
       <h1>Hello World!</h1>
       <p style={{ color: 'pink', backgroundColor: 'purple' }}>Trop stylé React</p>
-      <DireBonjour prenom="Timéo" nom="Delatour" age={ 42 } />
+      <DireBonjour prenom="Julien" nom="Delatour" age={ 42 } />
       <DireBonjour prenom="Killian" nom="Allouard" age={ 12 } />
-      <DireBonjour prenom="Killian" nom="Bernard" age={ 10 } />
+      <DireBonjour prenom="Timéo" nom="Bernard" age={ 10 } />
+      <DireAuRevoir prenom="Camille" nom="Roublond" />
     </div>
   )
 };
