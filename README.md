@@ -35,7 +35,7 @@ React.createElement(
 );
 ```
 
-On appellera expression JSX, un petit paté de JSX. Par exemple :
+On appellera expression JSX, un petit bloc de JSX. Par exemple :
 
 ```javascript
 const monDiv = <div>salut les amis</div>;
