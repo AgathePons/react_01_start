@@ -1,9 +1,10 @@
 import { render } from 'react-dom';
 
-const DireBonjour = () => {
+const DireBonjour = ({prenom, nom, age}) => {
   return (
     <p style={{ color: 'purple', backgroundColor: 'pink' }}>
-      Bonjour Gontrand
+      Bonjour {prenom} {nom} !
+      { age < 18 && <span>Va dans ta chambre</span> }
     </p>
   )
 };
@@ -11,10 +12,11 @@ const DireBonjour = () => {
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <h1>Hello World!</h1>
       <p style={{ color: 'pink', backgroundColor: 'purple' }}>Trop stylé React</p>
-      <DireBonjour />
-      <DireBonjour />
+      <DireBonjour prenom="Timéo" nom="Delatour" age={ 42 } />
+      <DireBonjour prenom="Killian" nom="Allouard" age={ 12 } />
+      <DireBonjour prenom="Killian" nom="Bernard" age={ 10 } />
     </div>
   )
 };
