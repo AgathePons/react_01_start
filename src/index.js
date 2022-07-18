@@ -1,3 +1,22 @@
-const sum = (a, b) => a + b;
+import { render } from 'react-dom';
 
-console.log(sum(3, 2));
+const DireBonjour = () => {
+  return (
+    <p style={{ color: 'purple', backgroundColor: 'pink' }}>
+      Bonjour Gontrand
+    </p>
+  )
+};
+
+const App = () => {
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <p style={{ color: 'pink', backgroundColor: 'purple' }}>Trop stylé React</p>
+      <DireBonjour />
+      <DireBonjour />
+    </div>
+  )
+};
+
+render(<App />, document.getElementById('root'));
