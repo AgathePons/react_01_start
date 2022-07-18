@@ -5,6 +5,7 @@
     "browser": true
   },
   "rules": {
+    "max-len": ["error", { "comments": 150, "code": 100 }],
     "brace-style": ["error", "stroustrup"],
     "no-param-reassign": ["error", { "props": false }],
     "no-mixed-operators": ["error", { "allowSamePrecedence": true }],

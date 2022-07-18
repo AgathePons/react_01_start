@@ -4,6 +4,7 @@ import { render } from 'react-dom';
  * import exportDefaultName, { DireBonjour, DireAuRevoir } from './components/DireBonjour';
  */
 import { DireBonjour, DireAuRevoir } from './components/DireBonjour';
+import InfosBloc from './components/InfosBloc';
 import './style.css';
 
 const App = () => (
@@ -15,6 +16,8 @@ const App = () => (
     <DireBonjour prenom="Killian" nom="Allouard" age={12} />
     <DireBonjour prenom="Timéo" nom="Bernard" age={10} />
     <DireAuRevoir prenom="Camille" nom="Roublond" />
+    <InfosBloc />
+
   </div>
 );
 
