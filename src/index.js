@@ -1,5 +1,10 @@
 import { render } from 'react-dom';
+/**
+ * if we want to import named exports + one default export from one file, we can write:
+ * import exportDefaultName, { DireBonjour, DireAuRevoir } from './components/DireBonjour';
+ */
 import { DireBonjour, DireAuRevoir } from './components/DireBonjour';
+import './style.css';
 
 const App = () => {
   return (
