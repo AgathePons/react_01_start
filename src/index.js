@@ -26,7 +26,18 @@ const App = () => (
     </InfosBloc>
     <InfosBloc infoTitle="Autre info">
       Hey, this is the same component, but an other child, wahou, awesome!<br />
-      <button type="button">Click if you think it's awesome!!</button>
+      <button
+        type="button"
+        style={{
+          backgroundColor: 'yellow',
+          borderRadius: 0,
+          border: 'none',
+          marginTop: '1rem',
+          padding: '.3rem',
+        }}
+      >
+        Click if you think it's awesome!!
+      </button>
     </InfosBloc>
 
   </div>
