@@ -1,6 +1,6 @@
 // named exports, have to be imported by their names
 export const DireBonjour = ({ prenom, nom, age }) => (
-  <p style={{ color: 'purple', backgroundColor: 'pink' }}>
+  <p style={{ color: 'white', backgroundColor: 'darkblue' }}>
     Bonjour {prenom} {nom} !
     {/* comparison operators way */}
     { age < 18 && <span>Va dans ta chambre !</span> }
@@ -10,7 +10,7 @@ export const DireBonjour = ({ prenom, nom, age }) => (
 );
 
 export const DireAuRevoir = ({ prenom, nom, age }) => (
-  <p style={{ color: 'purple', backgroundColor: 'pink' }}>
+  <p style={{ color: 'white', backgroundColor: 'darkblue' }}>
     Au revoir {prenom} {nom} !
   </p>
 );
