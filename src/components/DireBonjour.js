@@ -1,4 +1,4 @@
-// named exports, hve to be imported by their names
+// named exports, have to be imported by their names
 export const DireBonjour = ({prenom, nom, age}) => {
   return (
     <p style={{ color: 'purple', backgroundColor: 'pink' }}>
